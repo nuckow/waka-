@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свидание</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333333; /* Темно-серый фон */
+            color: #f5f5dc; /* Молочный цвет шрифта */
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff69b4; /* Розовый заголовок */
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px;
+        }
+        .button:hover {
+            background-color: #ff1493;
+        }
+        #surprise {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Приглашение для Айганым</h1>
+    <p>Айганым, я хочу провести с тобой вечер и сделать его особенным. Нажми на кнопку ниже, чтобы узнать, что я для тебя приготовил!</p>
+    <button class="button" onclick="revealSurprise()">Раскрыть сюрприз</button>
+    <div id="surprise">
+        <p>Ты — невероятно важная для меня! 💖</p>
+        <p>Мой сюрприз для тебя — это вечер кино вместе. Думаю, нам будет весело!</p>
+        <a href="https://www.kino.kz" class="button">Посмотреть фильмы вместе</a>
+    </div>
+    <script>
+        function revealSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
